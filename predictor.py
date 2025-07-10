@@ -2,7 +2,6 @@ def get_suggestions(symbol, chain_data):
     if not chain_data:
         return None
 
-    # Example logic: pick CE with highest OI near ATM
     ce_candidates = [row.get('CE') for row in chain_data if 'CE' in row]
     ce_candidates = sorted(
         [c for c in ce_candidates if c and c.get('openInterest')],
