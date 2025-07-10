@@ -1,9 +1,5 @@
 from telegram import Update
-from telegram.ext import (
-    ApplicationBuilder,
-    CommandHandler,
-    ContextTypes,
-)
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import datetime
 import os
 from scraper import fetch_nse_option_chain
